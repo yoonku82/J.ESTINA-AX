@@ -5,7 +5,7 @@ render=function(){
   const compact=role==='전체'&&!onlyFav&&!query;
   $('#cards').classList.toggle('catalog-summary',compact);
   if(compact){
-    $('#cards').innerHTML=roles.slice(1).map(([r,icon])=>`<section class="catalog-row" aria-label="${safe(r)} 에이전트"><h3 class="catalog-label"><span aria-hidden="true">${icon}</span>${safe(r)}</h3><div class="catalog-names">${agents.filter(a=>a.role===r).map(a=>`<button class="catalog-item" data-agent="${a.id}" aria-label="${safe(a.name)} 체험하기">${safe(a.name)}</button>`).join('')}</div></section>`).join('');
+    $('#cards').innerHTML=roles.filter(([name])=>name!=='전체').map(([r,icon])=>`<section class="catalog-row" aria-label="${safe(r)} 에이전트"><h3 class="catalog-label"><span aria-hidden="true">${icon}</span>${safe(r)}</h3><div class="catalog-names">${agents.filter(a=>a.role===r).map(a=>`<button class="catalog-item" data-agent="${a.id}" aria-label="${safe(a.name)} 체험하기">${safe(a.name)}</button>`).join('')}</div></section>`).join('');
     document.querySelectorAll('[data-agent]').forEach(b=>b.onclick=()=>openAgent(+b.dataset.agent));
   }
 };

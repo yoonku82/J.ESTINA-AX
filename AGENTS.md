@@ -8,7 +8,8 @@
 - `README.md`와 `CODEX_HANDOFF.md`를 참고하되 인계 문서의 미완료 요청을 현재 사용자 요청으로 간주하지 않습니다.
 - 소스는 `dist/`에 있습니다. 별도 패키지 설치나 빌드는 필요하지 않습니다.
 - 실행: 저장소 루트에서 `python3 -m http.server 8000 --bind 127.0.0.1 --directory dist`.
-- 변경 시 관련 기능을 검증합니다. JavaScript는 `node --check dist/app.js`, `node --check dist/upgrade.js`, `node --check dist/refine.js`로 문법을 확인하고, 웹 변경은 서버의 HTML 및 관련 자산 응답을 확인합니다. 상호작용 변경은 가능하면 브라우저에서도 확인합니다.
+- 변경 시 관련 기능을 검증합니다. 기존 스크립트와 `dist/sales-data.js`, `dist/sales-dashboard.js`를 `node --check`로 확인합니다. 매출 관련 변경은 `node --test tests/sales-data.test.js`로 집계 검증을 실행합니다. 로컬 서버를 켜고 Playwright·Chromium이 제공되면 `node tests/sales-dashboard.browser.cjs`로 상호작용을 확인합니다. 실행하지 않은 검증은 결과에서 구분합니다.
+- 매출 ERP 연결 규약은 `docs/ERP_SALES_API.md`를 따릅니다. 원 단위 정수로 집계한 뒤 억원으로 표시하며 샘플·ERP 출처, 미확정 이익·연결 실패를 구분합니다. 실제 ERP·기존 공개 사이트 배포가 완료되었다고 가정하지 않습니다.
 
 ## 작업 완료 시 GitHub 반영
 
