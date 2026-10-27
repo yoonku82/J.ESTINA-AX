@@ -79,3 +79,8 @@ GitHub Pages용 `gh-pages` 브랜치를 준비했습니다. 최초 활성화 설
 이 저장소의 `AGENTS.md`에는 Codex 수정 작업 완료 시 검증·작업 내역 기록·커밋·GitHub main 동기화를 수행하는 지침이 있습니다. 변경은 저장소에 기록되며, 항상 실행되는 백그라운드 동기화 서비스는 아닙니다. GitHub 쓰기 권한이 필요하며 실패하면 작업 결과에서 보고합니다.
 
 Codex에서 이 저장소를 선택하고 수정 요청을 하면 같은 소스를 이어서 작업할 수 있습니다. GPT 프로젝트 대화 자체와 해당 프로젝트에서 별도로 만든 파일은 자동으로 가져오지 않습니다. GitHub 반영만으로 기존 ChatGPT Sites 공개 페이지가 재배포되지는 않습니다.
+
+## 2026-10-27 화면 수정
+- 현재 GitHub Pages: https://yoonku82.github.io/J.ESTINA-AX/
+- `dist/requested-updates.js` / `.css`: AI 활용 가이드 시각화, 매출계획 시뮬레이터(억원), 목표 비교 그래프, 로드맵 4열, 마케팅 기본 직군.
+- 스크립트 마지막에 requested-updates.js를 로드합니다. 매출 현황(sales)과 가상 매출계획(plan)은 별도 탭입니다. Sites 호스팅과 GitHub Pages는 별도 배포입니다.
