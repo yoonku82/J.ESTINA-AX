@@ -1,5 +1,12 @@
 # 작업 내역
 
+## 2026-10-27 GitHub Pages 배포 준비 (한국 시간)
+
+- 저장소의 Public(공개) 표시와 요청된 소스 `2a6cf4e`의 공개 접근을 확인했습니다.
+- 해당 소스의 dist 파일과 `.nojekyll`을 gh-pages 브랜치에 게시하고 원격 SHA `8caf69a5f861c8c061f348be263e750e30cc8d91` 일치를 확인했습니다.
+- Pages 활성화 API는 `403 Resource not accessible by integration`으로 거절됐습니다. 소유자가 설정 → 페이지에서 gh-pages 및 루트 폴더를 지정해야 합니다.
+- `docs/DEPLOYMENT.md`에 설정값과 후속 배포 기준을 기록했습니다. 사이트 활성화·배포·접속 확인은 완료되지 않았으며 기존 ChatGPT Sites도 변경하지 않았습니다.
+
 ## 2026-10-26 (한국 시간)
 
 - 사용자 제공 `JESTINA-AX-Connect-source.zip`의 HTML, CSS, JavaScript, 이미지 및 기존 안내 문서를 저장소로 가져왔습니다.

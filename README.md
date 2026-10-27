@@ -62,6 +62,8 @@ node tests/sales-dashboard.browser.cjs
 ```
 
 ## 배포
+GitHub Pages용 `gh-pages` 브랜치를 준비했습니다. 최초 활성화 설정값과 현재 상태는 [배포 안내](docs/DEPLOYMENT.md)를 참고하세요. 사이트 활성화 API는 권한 부족으로 거절됐으며 배포 완료로 검증된 상태는 아닙니다.
+
 정적 호스팅에는 dist 폴더를 배포하면 됩니다.
 이 ZIP을 GitHub에 올리는 것만으로 기존 공개 사이트가 자동 업데이트되지는 않습니다.
 기존 Sites를 수정할 때는 .openai/hosting.json의 project_id를 유지하고 Sites 배포 절차를 사용합니다.
